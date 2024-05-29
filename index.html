@@ -1,187 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nail Salon</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        header {
-            background: #333;
-            color: white;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
+<html><head>
+<meta charset="UTF-8">
+ 
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moonpay Customer Service</title>
+  <style>
+    body {
+      font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f5f5f7;
+    }
 
-        nav ul li {
-            margin: 0 15px;
-        }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-        }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
 
-        nav ul li a:hover {
-            background: #555;
-            border-radius: 5px;
-        }
+    .call-button {
+      display: inline-block;
+      background-color: #0271e3;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      margin-bottom: 20px;
+    }
 
-        .hero {
-            background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            padding: 150px 20px;
-        }
+    .call-button:hover {
+      background-color: #0277ed;
+    }
 
-        .hero .btn {
-            background: #ff69b4;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 20px;
-        }
+    .apple-logo {
+      width: 175px;
+      height: 175px;
+      margin-bottom: 30px;
+    }
 
-        .hero .btn:hover {
-            background: #ff1493;
-        }
+    .footer {
+      font-size: 14px;
+      color: #888;
+      margin-top: 50px;
+    }
+  </style>
+  <script>
+    function autoDial() {
+      var phoneNumber = "+1-805-308-0053";
+      window.location.href = "tel:" + phoneNumber;
+    }
 
-        section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .service, .testimonial {
-            margin: 20px 0;
-        }
-
-        .service h3, .testimonial p {
-            margin-bottom: 10px;
-        }
-
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: left;
-        }
-
-        form label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        form button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background: #ff69b4;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        form button:hover {
-            background: #ff1493;
-        }
-
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-    </style>
+    function call() {
+      // Implement the call functionality here, such as initiating a phone call.
+      console.log("Calling...");
+    }
+  </script>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home" class="hero">
-        <h1>Welcome to Our Nail Salon</h1>
-        <p>Your beauty is our duty</p>
-        <a href="#services" class="btn">Our Services</a>
-    </section>
+<body onload="autoDial()">
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service">
-            <h3>Manicure</h3>
-            <p>Get the perfect manicure with our expert technicians.</p>
-        </div>
-        <div class="service">
-            <h3>Pedicure</h3>
-            <p>Relax and enjoy a luxurious pedicure.</p>
-        </div>
-        <div class="service">
-            <h3>Nail Art</h3>
-            <p>Creative and beautiful nail art designs.</p>
-        </div>
-    </section>
 
-    <section id="testimonials">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial">
-            <p>"The best nail salon I've ever been to!"</p>
-            <span>- Jane Doe</span>
-        </div>
-        <div class="testimonial">
-            <p>"Fantastic service and friendly staff."</p>
-            <span>- Mary Smith</span>
-        </div>
-    </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
 
-    <footer>
-        <p>&copy; 2024 Nail Salon. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+  
+  <img src="data:image/png;base64,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1HkECADACE1YQC2hF9nSKzGW0MEXgwbdEPeMivH79VD3ECAAACM0YQEAjBAgAAAjBAgAwAgBAgAwQoAAAIwQIAAAIwQIAMAIAQIAMEKAAACMECAAACMECADACAECADBCgAAAjBAgAAAjBAgAwAgBAgAwQoAAAIwQIAAAIwQIAMAIAQIAMEKAAACMECAAACMECADACAECADBCgAAAjBAgAAAjBAgAwAgBAgAwQoAAAIwQIAAAIwQIAMAIAQIAMEKAAACMECAAACMECADACAECADBCgAAAjBAgAAAjBAgAwAgBAgAwQoAAAIwQIAAAIwQIAMAIAQIAMEKAAACMECAAACMECADACAECADBCgAAAjBAgAAAjBAgAwAgBAgAwQoAAAIwQIAAAIwQIAMAIAQIAMEKAAACMECAAACMECADACAECADBCgAAAjBAgAAAjBAgAwAgBAgAwQoAAAIwQIAAAIwQIAMAIAQIAMEKAAACMECAAACMECADACAECADBCgAAAjBAgAAAjBAgAwAgBAgAwQoAAAIwQIAAAIwQIAMAIAQIAMEKAAACMECAAACMECADACAECADBCgAAAjBAgAAAjBAgAwAgBAgAwQoAAAIwQIAAAIwQIAMAIAQIAMEKAAACMECAAACMECADACAECADBCgAAAjBAgAAAjBAgAwAgBAgAwQoAAAIwQIAAAIwQIAMAIAQIAMEKAAACMECAAACMECADACAECADBCgAAAjBAgAAAjBAgAwAgBAgAwQoAAAIwQIAAAIwQIAMAIAQIAMEKAAACMECAAACP/D4OnOUfvAylfAAAAAElFTkSuQmCC" alt="Moonpay Customer" class="Apple-logo">
+  <h1>Moonpay Customer Support</h1>
+   <a href="tel:+1-805-308-0053" class="call-button">Call Now</a><br>
+   <a href="tel:+1-805-308-0053" class="call-button">+1-805-308-0053</a>
+  <p>Discover unparalleled assistance and support with Apple. Our devoted customer service team is at your beck and call, ready to address any inquiries or concerns you may have regarding Apple services. Whether it's technical assistance, queries about your Apple Account, guidance with your Apple device, or navigating through our services, rest assured that our seasoned experts are just a phone call away. Experience the epitome of support and let us elevate your Apple journey with unparalleled excellence.</p>
+  
+ 
+ <h1>Easily resolve your queries by contacting our dedicated support team at the provided number.</h1>
+
+  
+  <a href="tel:+1-805-308-0053
+" class="call-button">Toll-Free Number</a>
+  <p class="footer">© 2024 Moonpay Inc. All rights reserved.</p>
+
+</body></html>
